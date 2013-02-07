@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Kiinanmuuri</name>
+	<author>Juho Jaakkola</author>
+	<version>1.8</version>
+	<description>Erilaisia räätälöintejä kiinanmuurin sivustoa varten.</description>
+	<website>http://www.kiinanmuuri.org/yhteiso</website>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<contributor>
+		<name>Juho Jaakkola</name>
+		<email>juho.jaakkola@mediamaisteri.com</email>
+		<username>juho.jaakkola</username> <!-- Elgg community username -->
+	</contributor>
+</plugin_manifest>
