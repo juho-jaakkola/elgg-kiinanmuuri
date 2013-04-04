@@ -9,7 +9,11 @@ function kiinanmuuri_init () {
 
 	elgg_unregister_menu_item('topbar', 'elgg_logo');
 
+	elgg_extend_view('css/elgg', 'kiinanmuuri/css');
+
 	//elgg_register_event_handler('pagesetup', 'system', 'kiinanmuuri_pagesetup');
+	
+	elgg_extend_view('page/layouts/content/header', 'market/info', 1);
 }
 
 /**
@@ -22,6 +26,13 @@ function kiinanmuuri_site_menu_setup ($hook, $type, $return, $params) {
 			unset($return['default'][$key]);
 			array_unshift($return['default'], $item);
 		}
+		
+		if ($item->getName() == 'market') {
+			$text = $item->getText();
+			$new_text = "$text <span id='market-beta'>Beta</span>";
+			$item->setText($new_text);
+		}
 	}
+	
 	return $return;
-}
+} 
