@@ -13,7 +13,9 @@ function kiinanmuuri_init () {
 
 	//elgg_register_event_handler('pagesetup', 'system', 'kiinanmuuri_pagesetup');
 	
-	elgg_extend_view('page/layouts/content/header', 'market/info', 1);
+	//elgg_extend_view('page/layouts/content/header', 'market/info', 1);
+	
+	elgg_extend_view('forms/register', 'kiinanmuuri/help/register', 1);
 }
 
 /**
